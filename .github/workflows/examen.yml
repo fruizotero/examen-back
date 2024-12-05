@@ -1,0 +1,17 @@
+name: Examen DAW
+on: push
+jobs:
+    job-nombres:
+      runs-on: ubuntu-latest
+      steps:
+         - 
+           name: nombre de usuario
+           run: echo ${{github.actor}}
+
+         - 
+            name: nombre repositorio
+            run: echo ${{github.repository}}
+
+         - 
+            name: nombre rama
+            run: echo ${{github.ref_name}}
