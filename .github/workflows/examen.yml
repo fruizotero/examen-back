@@ -29,7 +29,7 @@ jobs:
                username: ${{ secrets.DOCKERHUB_USERNAME }}
                password: ${{ secrets.DOCKER_TOKEN }}
             -
-             name: Build y push
+             name: Build y push a docker
              uses: docker/build-push-action@v6
              with:
                push: true
